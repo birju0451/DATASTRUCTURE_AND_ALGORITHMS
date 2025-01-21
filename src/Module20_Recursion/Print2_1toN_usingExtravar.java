@@ -1,10 +1,6 @@
 package Module20_Recursion;
-
 import java.util.Scanner;
-
-
-
-public class Print1toN_usingExtravar{
+public class Print2_1toN_usingExtravar{
     public static void print(int x,int n){
         if(x>n) return;
         System.out.println(x);

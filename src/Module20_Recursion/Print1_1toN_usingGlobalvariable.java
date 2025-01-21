@@ -2,7 +2,7 @@ package Module20_Recursion;
 
 import java.util.Scanner;
 
-public class Print1toN_usingGlobalvariable {
+public class Print1_1toN_usingGlobalvariable {
     static int n;//note:-Global variable can accessible anywhere in code
     public static void  print(int x){
         if(x>n) return; //base case
