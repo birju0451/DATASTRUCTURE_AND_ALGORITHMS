@@ -9,7 +9,7 @@ public class StudentClass {
         s1.setRollNo(128);
 
         System.out.println(s1.getRollNo());
-        private int k=10;
+        int k=10;
         System.out.println(k);
     }
 }
