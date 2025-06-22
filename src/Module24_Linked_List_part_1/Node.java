@@ -1,10 +1,10 @@
 package Module24_Linked_List_part_1;
 
-class Node {
+class Node{
     int val;
     Node next;
 
-    Node(int val) {
+    Node(int val ) {
         this.val = val;
     }
 }
