@@ -17,7 +17,7 @@ public class _02_Reverse_A_Stack {
              st_rev.push(element);
         }
 
-        System.out.println("The reverse  stack is : "+st_rev);
+        System.out.println("The reverse  stack is : " +st_rev);
 
     }
 }

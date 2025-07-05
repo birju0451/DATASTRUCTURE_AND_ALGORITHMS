@@ -25,6 +25,6 @@ public class _03_Reverse_Stack_Same_Order {
             st_rev.push(element);
         }
 
-        System.out.println("The reverse   stack is : "+st_rev);
+        System.out.println("The reverse   stack is i: "+st_rev);
     }
 }
