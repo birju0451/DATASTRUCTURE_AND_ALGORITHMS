@@ -55,14 +55,14 @@ public class _02_ArrayImplementation {
     }
     public static void main(String[] args) {
         queueA q = new queueA();
-        q.add(10);
-        q.add(20);
-        q.add(20);
-        q.add(20);
+        q.add(1);
+        q.add(2);
+        q.add(3);
+        q.add(4);
         q.display();
         q.remove();
         q.display();
         q.peek();
-        System.out.println(q.size);
+//        System.out.println(q.size);
     }
 }
