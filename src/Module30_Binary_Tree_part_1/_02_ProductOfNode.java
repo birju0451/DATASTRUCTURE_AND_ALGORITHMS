@@ -13,10 +13,11 @@ public class _02_ProductOfNode {
         Node d = new Node(4);
         Node e = new Node(5);
         Node f = new Node(6);
+        Node g = new Node(7);
 
         a.left = b; a.right = c;
         b.left = d; b.right = e;
-        c.right = f;
+        c.right = f;c.right = g;
 
         int ans = product(a);
         System.out.println(ans);

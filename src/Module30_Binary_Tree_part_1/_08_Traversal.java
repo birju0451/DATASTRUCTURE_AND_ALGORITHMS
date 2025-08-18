@@ -33,9 +33,9 @@ public class _08_Traversal {
         c.left = f; c.right = g;
         System.out.println("Pre order : ");
         preorder(a);
-        System.out.println("Post order");
+        System.out.println("\nIn order :");
         Inorder(a);
-        System.out.println();
+        System.out.println("\nPost order :");
         postorder(a);
     }
 }
