@@ -13,6 +13,12 @@ public class _08_Traversal {
         System.out.print(root.val+" ");
         Inorder(root.right);
     }
+    public static void RInorder(Node root){
+        if(root == null) return;
+        RInorder(root.left);
+        System.out.print(root.val+" ");
+        RInorder(root.right);
+    }
     public static void postorder(Node root){
         if(root == null) return;
         postorder(root.left);
@@ -37,5 +43,6 @@ public class _08_Traversal {
         Inorder(a);
         System.out.println("\nPost order :");
         postorder(a);
+
     }
 }
