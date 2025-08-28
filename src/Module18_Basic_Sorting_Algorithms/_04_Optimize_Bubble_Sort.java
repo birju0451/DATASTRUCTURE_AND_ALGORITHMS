@@ -1,0 +1,25 @@
+package Module18_Basic_Sorting_Algorithms;
+
+public class _04_Optimize_Bubble_Sort {
+    public static void print(int[] arr){
+        for(int ele:arr){
+            System.out.print(ele+" ");
+        }
+        System.out.println();
+    }
+    public static void main(String[] args) {
+        int[] arr = {5, 8, 1, -3, 8, 10};
+        int n = arr.length;
+        print(arr);
+        for (int x = 0; x < n; x++) {//n-1 passes
+            for (int i = 0; i < n - 1-x; i++) {
+                if (arr[i] > arr[i + 1]) {
+                    int temp = arr[i];
+                    arr[i] = arr[i + 1];
+                    arr[i + 1] = temp;
+                }
+            }
+        }
+        print(arr);
+    }
+}
