@@ -2,7 +2,7 @@ package Module34_Heaps_And_Queue;
 
 import java.util.PriorityQueue;
 
-public class _01_BasicHeapCF {
+public class _01_BasicHeapCF_Minimum_Heap {
     public static void main(String[] args) {
         PriorityQueue<Integer> pq = new PriorityQueue<>();
         pq.add(2);
