@@ -3,7 +3,7 @@ public class IncrementExample {
         int a = 5, b = 5;
         int[] arr={0,1,2,3,4,5,6,7,8,9,10};
         // Pre-increment
-        int x = ++a; // a is incremented first, then assigned to x
+        int x = ++a; // an is incremented first, then assigned to x
         System.out.println("Pre-increment: a = " + a + ", x = " + x); // a = 6, x = 6
 
         // Post-increment
