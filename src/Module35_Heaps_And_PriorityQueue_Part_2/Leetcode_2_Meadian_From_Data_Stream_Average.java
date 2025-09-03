@@ -1,0 +1,4 @@
+package Module35_Heaps_And_PriorityQueue_Part_2;
+
+public class Leetcode_2_Meadian_From_Data_Stream_Average {
+}

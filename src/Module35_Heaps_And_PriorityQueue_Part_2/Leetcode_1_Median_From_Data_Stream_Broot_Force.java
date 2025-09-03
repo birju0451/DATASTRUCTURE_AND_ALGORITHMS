@@ -21,5 +21,5 @@ class MedianFinder {
         else return (arr.get(n/2)+arr.get(n/2-1))/2.0;
     }
 }
-public class Leetcode_Median_From_Data_Stream {
+public class Leetcode_1_Median_From_Data_Stream_Broot_Force {
 }
