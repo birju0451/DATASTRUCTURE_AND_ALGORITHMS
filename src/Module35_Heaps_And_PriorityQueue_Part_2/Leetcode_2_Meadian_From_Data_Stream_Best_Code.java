@@ -3,10 +3,10 @@ package Module35_Heaps_And_PriorityQueue_Part_2;
 import java.util.Collections;
 import java.util.PriorityQueue;
 
-class MedianFinder {
+class MedianFinders {
     PriorityQueue<Integer> maxHeap = new PriorityQueue<>(Collections.reverseOrder());
     PriorityQueue<Integer> minHeap = new PriorityQueue<>();
-    public MedianFinder() {
+    public MedianFinders() {
 
     }
 
