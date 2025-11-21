@@ -15,7 +15,7 @@ public class subset2 {
         printSubsets(i+1,s,ans);//not take
     }
     public static void main(String[] args) {
-        String s="ab";
+        String s="abc";
         arr=new ArrayList<>();//reset
         printSubsets(0,s,"");
         System.out.println(arr);
