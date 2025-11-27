@@ -1,15 +1,12 @@
 package Module39_DYNAMIC_PROGRAMMING2;
 
-public class _05_Subset_Sum_with_Memoization {
+public class _22_Thinking_Of_Recursion_To_Tabulation_Subset {
     private static boolean SubsetSum(int i, int[] arr, int target,int[][] dp){
         if(i==arr.length){
             if(target == 0) return true;
             else return false;
         }
-        if(dp[i][target] != -1){
-            if(dp[i][target] == 1) return true;
-            else return false;
-        }
+        if(dp[i][target] != -1) return (dp[i][target] == 1);
         boolean ans = false;
         boolean skip = SubsetSum(i+1,arr,target,dp);
         if(target-arr[i]<0) {
