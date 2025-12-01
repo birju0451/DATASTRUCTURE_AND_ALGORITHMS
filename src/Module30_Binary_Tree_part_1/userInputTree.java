@@ -1,18 +1,7 @@
 package Module30_Binary_Tree_part_1;
 
 import java.util.*;
-
-class Node {
-    int val;
-    Node left, right;
-
-    Node(int val) {
-        this.val = val;
-    }
-}
-
-public class NodeOfTree {
-
+public class userInputTree {
     // Preorder
     public static void display(Node root){
         if(root == null) return;
