@@ -1,4 +1,4 @@
-package Module41_BackTracking;
+package Module42_BackTracking;
 
 public class test {
     public static void main(String[] args) {

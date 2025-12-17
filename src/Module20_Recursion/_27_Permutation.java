@@ -14,7 +14,7 @@ public class _27_Permutation{
         }
     }
     public static void main(String[] args) {
-        String s = "abcdef";
+        String s = "abc";
         printPermutations("",s);
     }
 }

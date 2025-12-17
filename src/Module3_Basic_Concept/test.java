@@ -1,4 +1,4 @@
-package Module3_Course_Navigation;
+package Module3_Basic_Concept;
 
 public class test {
     public static void main(String[] args) {
