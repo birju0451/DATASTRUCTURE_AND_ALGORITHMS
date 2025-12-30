@@ -1,4 +1,4 @@
-package Module46_Graph;
+package Module46_Graph1;
 
 import java.util.LinkedList;
 import java.util.Queue;

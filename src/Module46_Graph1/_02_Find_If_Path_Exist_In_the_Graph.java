@@ -1,4 +1,4 @@
-package Module46_Graph;
+package Module46_Graph1;
 
 import java.util.*;
 
@@ -14,7 +14,6 @@ public class _02_Find_If_Path_Exist_In_the_Graph {
             int b = edges[i][1];
             adj.get(a).add(b);
             adj.get(b).add(a);
-
         }
         boolean[] vis = new  boolean[n];
         vis[start] = true;
