@@ -1,0 +1,99 @@
+------------------------------------------------------------------------------------------
+🔑 One simple rule to remember:-
+# Who should come first → make that “smaller” in comparator.*
+    1.Want greater marks first → use b.marks - a.marks
+    2.Want smaller marks first → use a.marks - b.marks
+    3.Want greater roll first → use b.roll - a.roll
+    4.Want smaller roll first → use a.roll - b.roll
+-------------------------------------------------------------------------------------------
+#This is the core rule of comparator / compareTo.
+    Memorize this — everything depends on it.
+    When Java calls:
+    compare(a, b)
+
+    Your function returns a number.
+
+    Java reads that number like this:
+    Returned value	Meaning in Java
+    < 0	a is smaller → a comes out first
+    > 0	b is smaller → b comes out first
+    = 0	both are equal priority
+
+    *Example
+    return a.marks - b.marks;
+    If:
+    a.marks = 80
+    b.marks = 90
+
+
+    Calculation:-
+    80 - 90 = -10  (< 0)
+
+    Java thinks:-
+    a is smaller → a comes out first
+
+    *Reverse example
+    return b.marks - a.marks;
+    If:
+    a.marks = 80
+    b.marks = 90
+
+
+    Calculation:
+    90 - 80 = +10  (> 0)
+
+    Java thinks:
+    b is smaller → b comes out first
+
+    Final Simple Rule
+    < 0 → first argument wins
+    > 0 → second argument wins
+    = 0 → tie, any order
+---------------------------------------------------------------------------------------------
+    PriorityQueue always removes the one that is considered smaller by this rule.
+    Yes — that statement is always true, for every PriorityQueue in Java.
+
+    PriorityQueue always removes the element that is considered smaller by the comparison rule.
+
+    This is valid for:
+
+    Natural ordering (Comparable)
+    Custom ordering (Comparator)
+
+    Min-heap
+    Max-heap
+    Any object type
+
+    Why It Works for Both (Min and Max)
+    Case 1: Min-Heap
+    You define : return a - b;
+    Smaller number = “smaller” → comes out first
+    So: 1, 3, 5  → 1 comes out first
+
+    Case 2: Max-Heap
+    You define: return b - a;
+    Now you are saying:
+    Bigger value is “smaller” in comparison
+    So:1, 3, 5 → 5 comes out first
+
+
+    Java still removes the “smaller” one —
+    but you changed the meaning of “smaller.”
+
+    So the rule never changes
+
+    Java always does:
+
+    remove element that compare(...) says is smaller
+
+
+    What changes is:
+
+    Your comparator
+
+    Your definition of “smaller”
+
+    One-Line Final Truth
+
+    PriorityQueue behavior never changes.
+    Your comparator decides what “smaller” means.
