@@ -7,9 +7,9 @@ public class _04_recursive_display {
             return;
         }
 //        temp=temp.next;
-//        System.out.println(temp.val);
-        displayReecursive(temp.next);
         System.out.println(temp.val);
+        displayReecursive(temp.next);
+//        System.out.println(temp.val);
 
     }
     public static void main(String[] args) {
