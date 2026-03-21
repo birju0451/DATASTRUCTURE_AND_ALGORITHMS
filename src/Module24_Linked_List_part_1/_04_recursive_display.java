@@ -6,11 +6,8 @@ public class _04_recursive_display {
         if( temp == null){
             return;
         }
-//        temp=temp.next;
         System.out.println(temp.val);
         displayReecursive(temp.next);
-//        System.out.println(temp.val);
-
     }
     public static void main(String[] args) {
         Node a=new Node(10);
