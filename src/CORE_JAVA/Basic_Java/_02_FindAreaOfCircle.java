@@ -1,4 +1,4 @@
-package Basic_Java;
+package CORE_JAVA.Basic_Java;
 public class _02_FindAreaOfCircle {
     public static void main(String[] args) {
         double rad;
