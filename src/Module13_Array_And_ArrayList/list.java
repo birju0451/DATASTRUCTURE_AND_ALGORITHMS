@@ -4,14 +4,15 @@ import java.util.*;
 
 public class list {
     public static void main(String[] args) {
-        List<Integer> nums=new ArrayList<>();
-        nums.add(7);
-        nums.add(4);
-        nums.add(7);
-        nums.add(5);
-        nums.add(9);
+        List<Integer> num=new ArrayList<>();
+        num.add(7);
+        num.add(4);
+        num.add(7);
+        num.add(5);
+        num.add(9);
 
-        for(int ele:nums){
+
+        for(int ele:num){
             System.out.println(ele);
         }
     }

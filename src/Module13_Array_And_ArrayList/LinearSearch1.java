@@ -7,7 +7,7 @@ public class LinearSearch1 {
 
         for (int j : arr) {
             if (x == j) {
-                System.out.printf("Yes element Found");
+                System.out.print("Yes element Found");
                 break;
             }
         }
