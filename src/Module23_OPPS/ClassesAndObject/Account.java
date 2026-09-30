@@ -1,4 +1,4 @@
-package Module23_OPPS;
+package Module23_OPPS.ClassesAndObject;
 
 class Account {
     // Data security
@@ -28,13 +28,5 @@ class Account {
     private boolean validate(String userName, String password) {
         // Logic for authentication
         return userName.equalsIgnoreCase("sachin") && password.equals("sachin1233");
-    }
-}
-
-public class TestClass {
-    public static void main(String[] args) {
-        Account acc = new Account();
-        acc.setBalance(1000.0);
-        System.out.println("Current Balance: " + acc.getBalance());
     }
 }

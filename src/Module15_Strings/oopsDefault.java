@@ -1,6 +1,6 @@
 package Module15_Strings;
 
-import Module23_OPPS.Student;
+import Module23_OPPS.ClassesAndObject.Student;
 
 public class oopsDefault {
     public static void main(String[] args) {

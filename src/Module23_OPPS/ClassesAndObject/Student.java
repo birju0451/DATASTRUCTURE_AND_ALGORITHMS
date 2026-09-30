@@ -1,4 +1,4 @@
-package Module23_OPPS;
+package Module23_OPPS.ClassesAndObject;
 
 public  class Student{
     public  String name;
