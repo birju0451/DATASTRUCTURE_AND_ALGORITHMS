@@ -1,4 +1,4 @@
-package Module1_Question_Practice;
+package Module1_Question_Practice.String;
 
 public class _01_Armstrong_Number {
     public static void main(String[] args) {

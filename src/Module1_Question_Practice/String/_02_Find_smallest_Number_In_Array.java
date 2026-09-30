@@ -1,4 +1,4 @@
-package Module1_Question_Practice;
+package Module1_Question_Practice.String;
 
 import java.util.Scanner;
 

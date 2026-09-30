@@ -1,4 +1,4 @@
-package Module15_Strings;
+package Module15_Strings.Leetcode;
 
 public class _151_Reverse_word_In_String {
     public static String reverseWords(String s){

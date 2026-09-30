@@ -1,4 +1,4 @@
-package Module15_Strings;
+package Module15_Strings.Leetcode;
 
 class Solution {
     public static boolean isPalindrome(String s) {

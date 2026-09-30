@@ -1,4 +1,4 @@
-package Module15_Strings;
+package Module15_Strings.Leetcode;
 
 public class _28_Index_Of_the_First_occurrence {
     public static int StrStr(String haystack, String needle){

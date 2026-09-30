@@ -1,4 +1,4 @@
-package Module15_Strings;
+package Module15_Strings.Leetcode;
 
 public class _58_length_Of_the_Last_Word {
     public  static int LengthOfLastWord(String s){
