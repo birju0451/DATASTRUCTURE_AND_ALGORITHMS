@@ -1,4 +1,4 @@
-package Module23_OPPS;
+package Module23_OPPS.ClassesAndObject;
 
 class Car{
     static boolean live = true;
