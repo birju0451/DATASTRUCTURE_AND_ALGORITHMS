@@ -12,7 +12,7 @@ class Car{
     static void work(){
         System.out.println();
     }
-    
+
 }
 
 class Main{
