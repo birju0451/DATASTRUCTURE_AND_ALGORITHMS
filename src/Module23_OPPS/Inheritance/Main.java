@@ -1,39 +1,22 @@
-package Module23_OPPS.Inheritance;
-
-class Animal{
-    void show(){
-        System.out.println("Animal called :)");
-    }
-    private void eat(){
-        System.out.println("Some animal eats fishes ");
-    }
+interface A {
+    void show();
 }
-class Dog extends Animal{
+
+interface B {
+    void show();
+}
+
+class Test implements A, B {
     @Override
-    protected void show(){
-        System.out.println("Dog called :)");
+    public void show() {
+        System.out.println("Test class method");
     }
-
-    private void eat(){
-        System.out.println("Dog eats meals :)");
-    }
-}
-class Cat extends Dog{
-//    @Override
-//    void show(){
-//        System.out.println("Cat called : )");
-//    }
-//    @Override
-//    void eat(){
-//        System.out.println("Cat eats fish");
-//    }
 }
 
 public class Main {
     public static void main(String[] args) {
-        Cat animal = new Cat();
-        animal.show();
-        animal.;
+        Test obj = new Test();
+
+        obj.show();
     }
 }
-
