@@ -13,6 +13,7 @@ public class _01_BasicStack {
         st.push(20);
         System.out.println(st.isEmpty());
         System.out.println(st.size());
+
         //operation on stack
         System.out.println(st);
         System.out.println(st.peek());

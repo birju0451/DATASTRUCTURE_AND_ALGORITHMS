@@ -7,7 +7,6 @@ public class _02_Find_Number_Of_Invalid_Brackets {
     public  static int isBalanced(String str) {
         Stack<Character> st = new Stack<>();
         int n = str.length();
-        int count = 0;
         for (int i = 0; i < n; i++) {
             char ch = str.charAt(i);
             if(ch == '(') {
