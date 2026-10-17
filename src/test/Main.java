@@ -1,28 +1,28 @@
 package test;
 
+import java.util.Enumeration;
 import java.util.Scanner;
+import java.util.Stack;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        int[] input = {1,3,2,1,8,6,3};
+        int n = input.length;
+        int[] result = new int[n];
+        Stack<Integer> st =new Stack<>();
+        st.push(input[n-1]);
+        result[n-1] = input[n-1];
+        for(int i = n-2; i >=0 ; i--){
+            if(st.peek() >input[i]){
+                input[i] = st.peek();
 
-        String s = sc.nextLine();
-        StringBuilder sb = new StringBuilder();
-        for(int i=s.length()-1;i>=0;i--){
-            if(s.charAt(i) !=' '){
-                sb.append(s.charAt(i));
+            }
+            while(!st.isEmpty() && st.peek() < input[i]){
+                st.pop();
+            }
+            if(st.isEmpty()){
+                st.push(input[i]);
             }
         }
-        String rev = sb.toString();
-        char[] arr = new char[s.length()];
-        for (int i=0;i< arr.length;i++){
-            if(s.charAt(i) ==' ') arr[i] = ' ';
-        }
-        int x =0;
-        for (int i=0;i< arr.length;i++){
-            if(arr[i] != ' ') arr[i] = rev.charAt(x++);
-        }
-        String a= new String(arr);
-        System.out.println(a);
     }
 }
