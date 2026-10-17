@@ -1,0 +1,170 @@
+Birju, let's understand the rules of abstraction in Java from an interview perspective, with simple examples.
+
+## 1. Rules of abstraction in Java
+
+### Rule 1: An abstract class must use the `abstract` keyword.
+
+```
+abstract class Shape {
+}
+```
+
+You cannot create an object of an abstract class directly.
+
+```
+Shape s = new Shape(); // Compilation error
+```
+
+### Rule 2: An abstract class can contain abstract and concrete methods.
+
+```
+abstract class Shape {
+    abstract double area();
+
+    void display() {
+        System.out.println("This is a shape");
+    }
+}
+```
+
+- `area()` has no body.
+- `display()` has a body.
+
+### Rule 3: An abstract method cannot have a body.
+
+```
+abstract double area(); // Valid
+```
+
+This is invalid:
+
+```
+abstract double area() {  // Compilation error
+    return 0;
+}
+```
+
+### Rule 4: If a class contains an abstract method, the class must be abstract.
+
+```
+abstract class Shape {
+    abstract double area();
+}
+```
+
+This is invalid:
+
+```
+class Shape {
+    abstract double area(); // Compilation error
+}
+```
+
+### Rule 5: A concrete subclass must implement all inherited abstract methods.
+
+```
+abstract class Shape {
+    abstract double area();
+}
+
+class Circle extends Shape {
+    @Override
+    double area() {
+        return 3.14 * 5 * 5;
+    }
+}
+```
+
+If `Circle` does not implement `area()`, it must also be declared `abstract`.
+
+### Rule 6: Constructors cannot be abstract.
+
+```
+abstract class Shape {
+    Shape(String color) {
+        System.out.println(color);
+    }
+}
+```
+
+This is valid. An abstract class can have constructors, but a constructor cannot use the `abstract` keyword.
+
+### Rule 7: Abstract classes can have constructors, variables, and static methods.
+
+```
+abstract class Shape {
+    String color;
+
+    Shape(String color) {
+        this.color = color;
+    }
+
+    static void message() {
+        System.out.println("Shapes");
+    }
+}
+```
+
+An abstract class is not restricted to abstract methods alone.
+
+### Rule 8: An abstract class can extend another abstract class.
+
+```
+abstract class Shape {
+    abstract double area();
+}
+
+abstract class Polygon extends Shape {
+    abstract int sides();
+}
+```
+
+`Polygon` does not need to implement `area()` because it is also abstract.
+
+### Rule 9: An abstract class can implement an interface without implementing every method.
+
+If it leaves some interface methods unimplemented, the class must remain abstract.
+
+### Rule 10: Abstract methods cannot be `private`, `static`, or `final`.
+
+```
+abstract void display();         // Valid
+
+private abstract void show();    // Invalid
+static abstract void print();    // Invalid
+final abstract void run();       // Invalid
+```
+
+Why?
+
+- `private`: cannot be overridden by subclasses.
+- `static`: belongs to the class, not runtime instance-method dispatch.
+- `final`: prevents overriding.
+
+These modifiers conflict with the requirements of an abstract instance method.
+
+## 2. Quick revision table
+------------------------------------------------------------------------------------------
+| Feature                                 | Rule                                          |
+| --------------------------------------- | ----------------------------------------------|
+| Abstract class object                   | Cannot be created directly                    |
+| Abstract class constructor              | Allowed                                       |
+| Abstract constructor                    | Not allowed                                   |
+| Abstract method body                    | Not allowed                                   |
+| Concrete method in abstract class       | Allowed                                       |
+| Abstract method in a non-abstract class | Not allowed                                   |
+| Concrete child class                    | Must implement all inherited abstract methods |
+| Abstract child class                    | Can leave abstract methods unimplemented      |
+| Abstract method                         | Cannot be `private`, `static`, or `final`     |
+-------------------------------------------------------------------------------------------
+## 3. Interview question
+
+Can an abstract class have zero abstract methods?
+
+Yes, it can.
+An abstract class can have zero abstract methods. You might declare it abstract simply to prevent direct object creation or to provide a common base class.
+abstract class Shape {
+    void display() {
+        System.out.println("Shape");
+    }
+}
