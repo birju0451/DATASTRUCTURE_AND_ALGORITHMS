@@ -1,0 +1,114 @@
+Exception is an event that distrupt  the normal flow of the program
+"it is an object which is thrown at runtime."
+
+java.lang.Object
+└── java.lang.Throwable
+    ├── java.lang.Error
+    │   ├── java.lang.VirtualMachineError
+    │   │   ├── java.lang.InternalError
+    │   │   ├── java.lang.OutOfMemoryError
+    │   │   ├── java.lang.StackOverflowError
+    │   │   └── java.lang.UnknownError
+    │   ├── java.lang.LinkageError
+    │   │   ├── java.lang.BootstrapMethodError
+    │   │   ├── java.lang.ClassCircularityError
+    │   │   ├── java.lang.ClassFormatError
+    │   │   │   └── java.lang.UnsupportedClassVersionError
+    │   │   ├── java.lang.ExceptionInInitializerError
+    │   │   ├── java.lang.IncompatibleClassChangeError
+    │   │   │   ├── java.lang.AbstractMethodError
+    │   │   │   ├── java.lang.IllegalAccessError
+    │   │   │   ├── java.lang.InstantiationError
+    │   │   │   ├── java.lang.NoSuchFieldError
+    │   │   │   └── java.lang.NoSuchMethodError
+    │   │   ├── java.lang.NoClassDefFoundError
+    │   │   ├── java.lang.UnsatisfiedLinkError
+    │   │   └── java.lang.VerifyError
+    │   ├── java.lang.AssertionError
+    │   ├── java.lang.ThreadDeath
+    │   └── java.io.IOError
+    │
+    └── java.lang.Exception
+        ├── java.lang.RuntimeException
+        │   ├── java.lang.ArithmeticException
+        │   ├── java.lang.ArrayStoreException
+        │   ├── java.lang.ClassCastException
+        │   ├── java.lang.EnumConstantNotPresentException
+        │   ├── java.lang.IllegalArgumentException
+        │   │   ├── java.lang.IllegalThreadStateException
+        │   │   └── java.lang.NumberFormatException
+        │   ├── java.lang.IllegalCallerException
+        │   ├── java.lang.IllegalMonitorStateException
+        │   ├── java.lang.IllegalStateException
+        │   ├── java.lang.IndexOutOfBoundsException
+        │   │   ├── java.lang.ArrayIndexOutOfBoundsException
+        │   │   └── java.lang.StringIndexOutOfBoundsException
+        │   ├── java.lang.NegativeArraySizeException
+        │   ├── java.lang.NullPointerException
+        │   ├── java.lang.SecurityException
+        │   ├── java.lang.TypeNotPresentException
+        │   ├── java.lang.UnsupportedOperationException
+        │   ├── java.util.ConcurrentModificationException
+        │   ├── java.util.EmptyStackException
+        │   ├── java.util.MissingResourceException
+        │   ├── java.util.NoSuchElementException
+        │   ├── java.util.InputMismatchException
+        │   ├── java.util.concurrent.RejectedExecutionException
+        │   ├── java.util.concurrent.CompletionException
+        │   ├── java.util.concurrent.CancellationException
+        │   ├── java.time.DateTimeException
+        │   ├── java.util.regex.PatternSyntaxException
+        │   ├── java.io.UncheckedIOException
+        │   └── java.sql.UncheckedSQLException
+        │
+        ├── java.io.IOException
+        │   ├── java.io.EOFException
+        │   ├── java.io.FileNotFoundException
+        │   ├── java.io.InterruptedIOException
+        │   ├── java.io.UTFDataFormatException
+        │   ├── java.io.UnsupportedEncodingException
+        │   ├── java.io.ObjectStreamException
+        │   │   ├── java.io.InvalidClassException
+        │   │   ├── java.io.InvalidObjectException
+        │   │   ├── java.io.NotSerializableException
+        │   │   └── java.io.OptionalDataException
+        │   ├── java.io.SyncFailedException
+        │   ├── java.io.CharConversionException
+        │   └── java.net.SocketException
+        │
+        ├── java.lang.ReflectiveOperationException
+        │   ├── java.lang.ClassNotFoundException
+        │   ├── java.lang.IllegalAccessException
+        │   ├── java.lang.InstantiationException
+        │   ├── java.lang.reflect.InvocationTargetException
+        │   └── java.lang.NoSuchMethodException
+        │
+        ├── java.sql.SQLException
+        │   ├── java.sql.SQLTransientException
+        │   │   ├── java.sql.SQLTransientConnectionException
+        │   │   └── java.sql.SQLTimeoutException
+        │   ├── java.sql.SQLNonTransientException
+        │   │   ├── java.sql.SQLNonTransientConnectionException
+        │   │   ├── java.sql.SQLDataException
+        │   │   ├── java.sql.SQLIntegrityConstraintViolationException
+        │   │   ├── java.sql.SQLInvalidAuthorizationSpecException
+        │   │   ├── java.sql.SQLSyntaxErrorException
+        │   │   └── java.sql.SQLFeatureNotSupportedException
+        │   ├── java.sql.SQLRecoverableException
+        │   └── java.sql.BatchUpdateException
+        │
+        ├── java.lang.InterruptedException
+        ├── java.lang.CloneNotSupportedException
+        ├── java.lang.NoSuchFieldException
+        ├── java.text.ParseException
+        ├── java.security.GeneralSecurityException
+        │   ├── java.security.cert.CertificateException
+        │   ├── java.security.NoSuchAlgorithmException
+        │   ├── java.security.InvalidKeyException
+        │   ├── java.security.SignatureException
+        │   └── java.security.KeyStoreException
+        ├── java.util.concurrent.TimeoutException
+        ├── java.util.concurrent.ExecutionException
+        ├── java.util.zip.DataFormatException
+        ├── jakarta.mail.MessagingException
+        └── java.awt.AWTException

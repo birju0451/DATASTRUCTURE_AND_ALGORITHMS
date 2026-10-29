@@ -1,4 +1,4 @@
-package Collection_FrameWork;
+package CORE_JAVA.Collection_FrameWork;
 
 public class test{
     public static void main(String[] args) {
